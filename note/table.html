@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>table about daily</title>
+    <link rel=stylesheet type="text/css" href="table/public.css" >
+    <link rel=stylesheet type="text/css" href="table/css.css" >
+    <script src="table/js.js" type="text/javascript"></script>
+</head>
+<body style="background-color:white">
+<div>
+    <h1>Diary Book</h1>
+    <div id="clock">
+
+    </div>
+    <div class="allnote" id="table">
+        <div class="addnote">
+            <div>
+                <a><div class="addfu" id="cgbg" onmousemove="changebg()" onclick="addnote()">+</div></a>
+            </div>
+        </div>
+        <div class="note">
+            <div class="tabline" >
+                <input  class="shuru " type="text" placeholder="Date" />
+
+                <input  class="shuru "  type="text"  placeholder="Weather"/>
+
+                <input  class="shuru " type="text"  placeholder="Mood" />
+            </div>
+            <div class="btstyle">
+                <a href="edit/edit.html">
+                    <div  class="bt"   onmousedown="change1(this)" onmouseup="change2(this)">Edit</div>
+                </a>
+                <a>
+                    <div  class="bt" id="delet" onclick="del(this.parentNode)" onmousedown="change1(this)" onmouseup="change2(this)">Delete</div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

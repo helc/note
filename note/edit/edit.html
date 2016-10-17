@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>edit</title>
+    <link rel=stylesheet type="text/css" href="../table/public.css" >
+    <link rel=stylesheet type="text/css" href="./editcss.css" >
+    <script src="editjs.js" type="text/javascript"></script>
+</head>
+<body>
+<form method="post" class="dark-matter">
+    <h1>
+        Diary
+        <span>A day has passed.</span>
+    </h1>
+    <label>
+        <span>Date :</span>
+        <input  type="text"  placeholder="Date" />
+    </label>
+    <label>
+        <span>Weather :</span>
+        <input type="text"  placeholder="weather" />
+    </label>
+    <label>
+        <span>Mood :</span>
+        <input  type="text"  placeholder="Mood" />
+    </label>
+    <label>
+        <span>Content :</span>
+        <textarea  name="message" placeholder="Something about today"></textarea>
+    </label>
+    <div class="btroom">
+        <input  type="button" class="button" value="Save"  onmousedown="changebt(this)" onmouseup="changebt2(this)"/>
+        <input  type="button" class="button" value="Return" onclick="GoBack()" onmousedown="changebt(this)" onmouseup="changebt2(this)"/>
+    </div>
+</form>
+
+</body>
+</html>
